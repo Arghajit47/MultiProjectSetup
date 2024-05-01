@@ -1,0 +1,19 @@
+{
+  "reporter": "cypress-mochawesome-reporter",
+  "reporterOptions": {
+    "embeddedScreenshots": true,
+
+    "charts": true,
+
+    "reportPageTitle": "Cypress Inline Report",
+
+    "inlineAssets": true
+  },
+  "chromeWebSecurity": false,
+  "video": true,
+  "viewportWidth": 1280,
+  "viewportHeight": 720,
+  "defaultCommandTimeout": 20000,
+  "pageLoadTimeout": 200000,
+  "testFiles": ["assessment.cy.js"]
+}
