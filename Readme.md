@@ -1,55 +1,32 @@
-# Cypress Automated Testing Framework
+# Multi-Project Setup: Cypress, Playwright, and Selenium
+
+This repository contains multiple projects that utilize different testing frameworks: Cypress, Playwright, and Selenium. Each project is designed to demonstrate automated testing capabilities using these frameworks for web application testing.
+
+## Projects Overview
+
+### 1. Cypress Project
+
+The Cypress project is located in the `AssessmentCypress` directory. Cypress is a modern end-to-end testing framework built for the modern web. It provides an easy-to-use interface for writing and running tests, along with powerful features such as time travel, snapshots, and automatic waiting.
+
+### 2. Playwright Project
+
+The Playwright project is located in the `AssessmentPlaywright` directory. Playwright is a cross-browser automation library for end-to-end testing. It allows you to automate interactions with web pages in multiple browsers, including Chromium, Firefox, and WebKit, with a single API.
+
+### 3. Selenium Project
+
+The Selenium project is located in the `AssessmentSelenium` directory. Selenium is a widely used open-source testing framework for web applications. It provides a suite of tools for automating web browsers across multiple platforms and programming languages.
 
 ## Getting Started
 
-To get started with Cypress, follow these steps:
+To get started with any of the projects, follow the instructions in their respective directories:
 
-1. **Installation**: To setup the Cypress project via npm:
+- For Cypress: [cypress-project/README.md](AssessmentCypress/Readme.md)
+- For Playwright: [playwright-project/README.md](AssessmentPlaywright/Readme.md)
+- For Selenium: [selenium-project/README.md](AssessmentSeleniumProject/Readme.md)
 
-   `npm i`
+Each project's README contains detailed information on setting up the environment, installing dependencies, running tests, and additional resources for learning more about the framework.
 
-1. **Configuration**: Here's the cypress project configuration:
+## Contributing
 
-   ```json
-   {
-     "reporter": "cypress-mochawesome-reporter",
-     "reporterOptions": {
-       "embeddedScreenshots": true,
-       "charts": true,
-       "reportPageTitle": "Cypress Inline Report",
-       "inlineAssets": true
-     },
-     "chromeWebSecurity": false,
-     "video": false,
-     "viewportWidth": 1280,
-     "viewportHeight": 720,
-     "defaultCommandTimeout": 20000,
-     "pageLoadTimeout": 200000,
-     "testFiles": ["assessment.cy.js"]
-   }
-   ```
+If you'd like to contribute to any of the projects or report issues, please follow the guidelines outlined in the respective project's README file. Contributions are welcome and appreciated!
 
-1. **Running Tests**: Execute your tests using the Cypress Test Runner:
-
-   ```bash
-   npm run test
-   ```
-
-   ### This command will install the npm package for Cypress and run the tests in background mode on Electron Browser.
-
-   ```bash
-   npx run test:headed
-   ```
-
-   ### This command will install the npm package for Cypress and run the tests in headed mode on Chrome Browser.
-
-1. **Generating Reports**: Cypress can generate detailed reports of test runs using the specified reporter (`cypress-mochawesome-reporter` in this case). Reports will be generated automatically after each test run.
-
-## Configuration Options
-
-- **Reporter**: Specify the reporter for generating test reports.
-- **Chrome Web Security**: Enable or disable Chrome web security.
-- **Video**: Enable or disable video recording of test runs.
-- **Viewport Size**: Set the default viewport width and height.
-- **Timeouts**: Configure default command timeout and page load timeout.
-- **Test Files**: Specify the location of test files and sequenece of the test files.
