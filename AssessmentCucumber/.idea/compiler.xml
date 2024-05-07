@@ -7,11 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="AssessmentCucumber" />
-        <module name="AssessmentSeleniumProject" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="AssessmentSelenium" target="21" />
-    </bytecodeTargetLevel>
   </component>
 </project>
